@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>出错</title>
+</head>
+<body>
+<img src="/error/img/500_1.png" id="500" style="margin: auto;display: block;"/>
+<div style="width: 5em;margin: auto;cursor: pointer;    color: chocolate;" onclick="history.go(-1)">返回上一页</div>
+<div style="text-align: center;color: #cccccc">${msg!}</div>
+</body>
+<script type="text/javascript" src="/autoAdd.js"></script>
+<script type="text/javascript">
+    $(function () {
+        if($(document.body).width() < 600){
+            $("#404").css("width","100%");
+        }
+        $("#404").css("margin-top",($(window).height()/2 - 150)+"px");
+    });
+
+</script>
+</html>

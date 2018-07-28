@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <script src="/OnlyDream.js"></script>
+</head>
+<body>
+<div class="dream" style="position: relative;width: 100%;height: 100%">
+    <!--====================== 电脑端壁纸 =========================-->
+    <div class="pc" style="display: none">
+        <img src="http://pic1.win4000.com/wallpaper/2017-10-19/59e80ae8868b1.jpg?down" class="bg showBg" >
+        <img src="http://desk.fd.zol-img.com.cn/t_s1600x900c5/g5/M00/0D/06/ChMkJ1ojp_qIG8E_AAv6AQv_8MYAAiwQAKgn_EAC_oZ509.jpg?downfile=1532272135739.jpg" class="bg" style="display: none">
+        <img src="http://desk.fd.zol-img.com.cn/t_s1600x900c5/g5/M00/0D/06/ChMkJlojp_6IVYPrABIQXzI9r2oAAiwQAL-QmAAEhB3333.jpg?downfile=1532272201223.jpg" class="bg" style="display: none">
+        <img src="http://desk.fd.zol-img.com.cn/t_s1600x900c5/g5/M00/04/03/ChMkJld6Ee2IFjbsAAmqGDagKk8AATOGAB6ykcACaow627.jpg?downfile=1532272373989.jpg" class="bg" style="display: none">
+        <img src="http://desk.fd.zol-img.com.cn/t_s1600x900c5/g5/M00/04/03/ChMkJld6EfmISOenAAuKvzC-KmMAATOGQK3_AMAC4rX177.jpg?downfile=1532272439252.jpg" class="bg" style="display: none">
+    </div>
+    <!--====================== 手机端壁纸 =========================-->
+    <div class="iphone" style="display: none">
+        <img src="http://pic1.win4000.com/mobile/2017-12-28/5a44c06c31f2f.jpg" class="bg showBg">
+        <img src="http://i1.desk.fd.zol-img.com.cn/t_s640x960/g5/M00/00/04/ChMkJlfJWESIHdHPAAcor9MeV5MAAU-JAFuJ7QAByjH692.jpg?downfile=1532347690192.jpg" class="bg " style="display: none">
+        <img src="http://i3.desk.fd.zol-img.com.cn/t_s640x1136/g5/M00/00/01/ChMkJlfJUN-IJ90UAAdwKbl91S8AAU9awDUx0IAB3BB632.jpg?downfile=1532348052213.jpg" class="bg" style="display: none">
+        <img src="http://pic1.win4000.com/mobile/2018-06-19/5b28bcfddce67.jpg" class="bg" style="display: none">
+    </div>
+<!--========================== 登录 ==============================-->
+<div class="box login" style="position: absolute">
+    <div class="login_box layui-form">
+        <ul>
+            <li style="font-size: 28px;color: white;height: 40px;">登&nbsp;录</li>
+            <li class="inputLi"><i class="iconfont icon-yonghu"></i><input type="text" id="userName" name="userName" placeholder="账号"></li>
+            <li class="inputLi"><i class="iconfont icon-mima"></i><input type="password" id="userPassword" name="userPassword" placeholder="密码"></li>
+            <li style="display: flex;"><div style="margin-top: auto;margin-bottom: auto;"><input name="3" lay-skin="primary" title="记住密码" type="checkbox" ></div></li>
+            <li class="buttonLi">
+                <button class="button button--nanuk button--round-l button--text-thick button--inverted" style="position: absolute;right: 0;margin: 0;" onclick="login()">
+                    <span>L</span><span>o</span><span>g</span><span>i</span><span>n</span>
+                </button>
+            </li>
+            <li style="display: flex;height: auto;"><a id="sup" href="#" style="margin-left: auto;color: white;" onclick="showRegister()">立即注册</a></li>
+        </ul>
+    </div>
+</div>
+<!--========================== 注册 ==============================-->
+<div class="box register" style="right: -400px;">
+    <div class="login_box layui-form">
+        <ul>
+            <li style="font-size: 28px;color: white;height: 40px;">注&nbsp;册</li>
+            <li class="inputLi"><i class="iconfont icon-yonghu"></i><input type="text" id="userName_R"  name="userName_R" placeholder="账号"></li>
+            <li class="inputLi"><i class="iconfont icon-mima"></i><input type="password"  id="userPassword_R1" name="userPassword_R1" placeholder="密码"></li>
+            <li class="inputLi"><i class="iconfont icon-mima"></i><input type="password"  id="userPassword_R2" name="userPassword_R2" placeholder="确认密码"></li>
+            <li class="buttonLi" style="display: flex;height: 70px;">
+                <button class="button button--nanuk button--round-l button--text-thick button--inverted"  onclick="register()">
+                    <span>R</span><span>e</span><span>g</span><span>i</span><span>s</span><span>t</span><span>e</span><span>r</span>
+                </button>
+            </li>
+            <li style="display: flex;height: auto;"><a id="" href="#" style="margin-left: auto;color: white;" onclick="showLogin()">立即登录</a></li>
+        </ul>
+    </div>
+</div>
+</div>
+</body>
+<script src="js/login.js"></script>
+<script>
+
+</script>
+</html>

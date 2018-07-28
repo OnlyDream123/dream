@@ -1,0 +1,28 @@
+*{margin: 0;padding: 0}
+html,body{width: 100%;height: 100%;color: white;overflow: hidden}
+.bg{height: 100%;width: 100%;top: 0;left: 0;position: absolute;z-index: -1;}
+.login_box ul{width: 80%;height:90%;margin: auto}
+.login_box li{height: 60px;display: flex}
+.inputLi{border-bottom: solid thin #f0efee;display: flex;position: relative}
+.inputLi i{margin-top: auto;font-size: 25px}
+.inputLi input{border: none;background: none;text-indent: 1em;color: white;width: 90%;font-size: 16px;height: 30px;margin-top: auto;}
+.login_box .buttonLi{position: relative;}
+.buttonLi .button{cursor: pointer;margin: auto 0 auto auto;}
+.login_box .layui-form-checkbox[lay-skin="primary"] span{color: white}
+.layui-layer-content{color: #000;}
+/*当浏览器宽度大于1000px的样式*/
+@media screen and (min-width:1000px ){
+    .box{height:100%;right:10%;position: absolute;display: flex;}
+    .login_box{height: 350px;width: 350px;min-width: 222px;background-color: rgba(50,50,50,0.3);margin: auto;display: flex;border-radius: 10px;}
+
+}
+/*当浏览器宽度小于1000px的样式*/
+@media screen and (max-width:1000px ) and (min-width:470px ) {
+    /*.box{height:100%;right:0px;position: absolute;display: flex;}*/
+    .box{height:100%;right:10%;position: absolute;display: flex;}
+    .login_box{height: 350px;width: 350px;min-width: 222px;background-color: rgba(50,50,50,0.3);margin: auto;display: flex;border-radius: 10px;}
+}
+@media screen and (max-width:470px ){
+    .box{height:100%;width:100%;display: flex;position: relative;}
+    .login_box{height: 350px;width: 350px;min-width: 222px;background-color: rgba(50,50,50,0.3);margin: auto;display: flex;border-radius: 10px;}
+}

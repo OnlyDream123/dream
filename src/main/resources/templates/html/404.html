@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>页面不存在</title>
+</head>
+<body>
+<img src="/error/img/404_1.gif" id="404" style="margin: auto;display: block;"/>
+<div style="width: 5em;margin: auto;cursor: pointer" onclick="history.go(-1)">返回上一页</div>
+</body>
+<script type="text/javascript" src="/autoAdd.js"></script>
+<script type="text/javascript">
+    $(function () {
+        if($(document.body).width() < 600){
+            $("#404").css("width","100%");
+        }
+        $("#404").css("margin-top",($(window).height()/2 - 180)+"px");
+    });
+
+</script>
+</html>
